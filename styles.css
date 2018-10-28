@@ -7,7 +7,6 @@ body {
     color: #111;
     background-color: #edeff0;
     background-image: url(svgs/background.svg);
-
 }
 
 #container {
@@ -77,6 +76,7 @@ footer {
 
 .main-navigation a {
     padding-right: 60px;
+    white-space: nowrap;
 }
 
 .main-navigation svg {
@@ -100,8 +100,32 @@ footer {
     color: #52595E;
 }
 
-
 .corgi {
     width: 130px;
     height: 150px;
+}
+
+.site-logo {
+  width: 140px;
+  height: 120px;
+}
+
+.logo-text {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .logo-text {
+  display: block;
+  }
+}
+
+.logo-headline {
+  text-transform: uppercase;
+}
+
+@media (min-width: 425px) {
+  .logo-headline {
+  display: none;
+  }
 }
