@@ -82,11 +82,16 @@ footer {
 .main-navigation svg {
     width: 14px;
     height: auto;
+    transition: transform .2s ease-out;
+}
+
+.main-navigation a:hover svg {
+    transform: scale(1.2);
 }
 
 .sable use {
     color: #B97F5B;
- }
+}
 
 .fawn use {
     color: #E9AA82;
@@ -106,26 +111,31 @@ footer {
 }
 
 .site-logo {
-  width: 140px;
-  height: 120px;
+    width: 140px;
+    height: 120px;
+    transition: transform .2s ease-out;
+}
+
+.site-logo:hover {
+    transform: scale(1.2);
 }
 
 .logo-text {
-  display: none;
+    display: none;
 }
 
 @media (min-width: 425px) {
-  .logo-text {
-  display: block;
-  }
+    .logo-text {
+        display: block;
+    }
 }
 
 .logo-headline {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 @media (min-width: 425px) {
-  .logo-headline {
-  display: none;
-  }
+    .logo-headline {
+        display: none;
+    }
 }
